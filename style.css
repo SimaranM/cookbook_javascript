@@ -1,0 +1,382 @@
+html {
+    overflow-x: hidden;
+}
+section {
+    padding: 25px 0;
+}
+body {
+    overflow: hidden;
+}
+/*Lemmys Section Start*/
+.prepBox{
+ display: flex;
+}
+
+.nav-direction{
+  flex-direction: column;
+}
+/*
+.shrimp_img{
+  background-image: url("https://natashaskitchen.com/wp-content/uploads/2017/05/Creamy-Shrimp-Alfredo-Pasta-5-600x900.jpg");
+  width: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0px hidden;
+  border-radius: 25px;
+}
+*/
+
+.hover-img{
+    background-color: rgba(255, 255, 255, 0.603);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 8px;
+    min-width: 240px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 625px;
+}
+
+.hover-img * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+  }
+  
+  .hover-img:before,
+  .hover-img:after {
+    background-color: rgba(255, 255, 255, 0.308);
+    border-top: 32px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+  }
+  
+  .hover-img img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .hover-img:hover:before,
+  .hover-img:hover:after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .hover-img:hover > img {
+    opacity: 0.7;
+  }
+  
+  .hover-img:hover figcaption {
+    opacity: 1;
+  }
+
+/*
+.shrimp-table{
+  background-color: mediumseagreen;
+  border-style: solid;
+  margin:0 auto;
+
+}
+
+*/
+.shrimp_recipe_text{
+  font-size: 19px;
+  margin-bottom: 16px;
+  /*why does the justify content not work? */
+  justify-content: center;
+}
+
+/*Lemmys Section End */
+/* ----------------Simran's section start */
+.dumpling_recipe_main .dumpling_recipe_header h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.dumpling_recipe_main .dumpling_recipe_inner {
+    padding-bottom: 50px;
+}
+.dumpling_recipe_main .dumpling_recipe_img img {
+    width: 100%;
+}
+.dumpling_recipe_main .img-overlay {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    padding: 6px;
+    background-color: white;
+}
+.dumpling_recipe_main .dumpling_recipe_text p {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.dumpling_recipe_main .heading_part {
+    background-color: rgb(99 21 21) !important;
+    color: white;
+}
+.dumpling_recipe_main .discription_part {
+    background-color: #fff4f4;
+}
+.dumpling_recipe_main .discription_part_second {
+    background-color: #ffff;
+}
+.dumpling_recipe_main .scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 330px;
+    background: #f5f5f5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.dumpling_recipe_main .force-overflow {
+    min-height: 450px;
+}
+.dumpling_recipe_main #style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+.dumpling_recipe_main #style-1::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+}
+.dumpling_recipe_main #style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(99 21 21);
+}
+.dumpling_recipe_main .dumpling_recipe_btn_inner {
+    text-align: center;
+}
+.dumpling_recipe_main .dumpling_recipe_btn_inner button {
+    background-color: rgb(99 21 21);
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+}
+/* effect-img hover*/
+.img-overlay {
+    position: relative;
+}
+
+.img-overlay-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgb(255 255 255 / 38%);
+}
+
+.img-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+}
+/* read_more--- */
+.read_more {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+}
+.extra_content {
+    display: contents;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .extra_content {
+        display: none;
+        width: 100%;
+    }
+    #read_more {
+        display: block;
+    }
+}
+.read_more {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+
+/* ----all media */
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 60px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 60px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-width: 1199px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .read_more {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 30px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 14px;
+    }
+}
+/* ------recipe_page  */
+.chinese_pork_recipe .chinese_pork_share li{
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+.chinese_pork_recipe .chinese_pork_share img{
+    width: 32px;
+    background-color: black;
+    border-radius: 100%;
+}
+.chinese_pork_recipe .chinese_pork_share{
+    position: absolute;
+    top: 12%;
+    left: -7%;
+}
+.chinese_pork_recipe .container{
+    position: relative;
+ 
+}
+/* ----------------Simran's section end */
+
+
+/* ----------------Salma's section start */
+.lasagna_heading{
+  text-align: center;
+  margin: 30px;
+  font-family: Verdana,sans-serif;
+
+}
+.lasagna_img_column {
+  position: relative;
+  width: 50%;
+}
+.lasagna_img_column:hover .lasagna_img{
+  opacity: 0.3;
+}
+.lasagna_img_column:hover .lasgna_img_shadow{
+  opacity: 1;
+}
+.lasagna_img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 5px -7px rgba(188,195,217,0.64);
+}
+.lasgna_img_shadow {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lasagna_img_text {
+  color:black;
+  font-family: Brush Script MT ;
+  font-size: 30px;
+}
+.lasagna_info_column{
+  font-size: 16px;
+  font-family: Verdana,sans-serif;
+}
+/*Table design*/
+.lasagna_table{
+  box-shadow: 3px 5px 4px 2px rgba(161,165,212,0.71);
+  margin-top: 10px;
+}
+.lasagna_table_head{
+  background-color: rgb(21, 4, 82);
+  color: white;
+}
+.lasagna_table_body{
+  background-color: #e9eaf3;
+}
